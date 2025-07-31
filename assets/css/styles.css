@@ -177,7 +177,7 @@ body.active {
 }
 
 /* 📱 Responsive para móviles */
-@media (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .login {
     width: 350px;
     margin: 150px auto;
@@ -336,7 +336,7 @@ body.active {
 }
 
 /* Opcional: mejora visual en pantallas pequeñas */
-@media (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .galeria {
     grid-auto-rows: 150px;
   }
