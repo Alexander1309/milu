@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+	<div id="login-section">
+		<div class="countdown-heart">
+			<div class="unit" id="unit-days">
+				<div class="heart-wrapper">
+					<div class="heart-bg">
+						<div class="heart-fill"></div>
+						<div class="heart-value">00</div>
+					</div>
+				</div>
+				<div class="label">Días</div>
+			</div>
+			<div class="unit" id="unit-hours">
+				<div class="heart-wrapper">
+					<div class="heart-bg">
+						<div class="heart-fill"></div>
+						<div class="heart-value">00</div>
+					</div>
+				</div>
+				<div class="label">Horas</div>
+			</div>
+			<div class="unit" id="unit-minutes">
+				<div class="heart-wrapper">
+					<div class="heart-bg">
+						<div class="heart-fill"></div>
+						<div class="heart-value">00</div>
+					</div>
+				</div>
+				<div class="label">Minutos</div>
+			</div>
+			<div class="unit" id="unit-seconds">
+				<div class="heart-wrapper">
+					<div class="heart-bg">
+						<div class="heart-fill"></div>
+						<div class="heart-value">00</div>
+					</div>
+				</div>
+				<div class="label">Segundos</div>
+			</div>
+		</div>
+
+
+		<div class="login">
+			<div>
+				<h2 class="login__title">Bienvenida <span class="heartbeat">💗</span></h2>
+			</div>
+			<div>
+				<div class="input__group">
+					<label for="nickname">Cual es tu apodo</label>
+					<input type="text" name="nickname" id="nickname" class="login__input" autocomplete="off">
+				</div>
+				<div class="input__group">
+					<label for="dateLove">Nuestra Fecha</label>
+					<input type="date" name="dateLove" id="dateLove" class="login__input" autocomplete="off">
+				</div>
+
+				<button class="btn-alargado" id="btnNext">Continuar 💖</button>
+			</div>
+		</div>
+	</div>
+
+	<template id="template-container">
+    <div id="template-section">
+			<header class="encabezado-principal">
+			  <div class="fecha">12 de abril del 2025</div>
+  			<div class="frase">FELIZ 4 MESES MI AMOR</div>
+			</header>
+
+			<div class="carta-container">
+				<img id="carta-imagen" src="./assets/img/carta_closed.png" alt="Carta" class="carta-img">
+				<button id="btnCarta" class="btn-alargado">Abrir</button>
+				<div id="mensaje-carta" class="mensaje-carta oculto"></div>
+			</div>
+
+			<div class="galeria">
+				<img src="./assets/img/1.jpg" alt="Foto 1">
+				<img src="./assets/img/2.jpg" alt="Foto 2">
+				<img src="./assets/img/6.jpg" alt="Foto 6">
+				<img src="./assets/img/4.jpg" alt="Foto 4">
+				<img src="./assets/img/5.jpg" alt="Foto 5">
+				<img src="./assets/img/3.jpg" alt="Foto 3">
+				<img src="./assets/img/7.jpg" alt="Foto 7">
+				<img src="./assets/img/8.jpg" alt="Foto 8">
+			</div>
+
+			<section class="timeline-container">
+				<h2>Nuestra Línea de Amor</h2>
+				<div class="timeline">
+					<div class="timeline-item left">
+						<div class="content">
+							<p>💐 Empezamos nuestro camino - <strong>12 Abr 2025</strong></p>
+						</div>
+					</div>
+					<div class="timeline-item right">
+						<div class="content">
+							<p>🌸 Primera foto como pareja - <strong>13 Abr 2025</strong></p>
+						</div>
+					</div>
+					<div class="timeline-item left">
+						<div class="content">
+							<p>🎉 Primera xv juntos - <strong>09 May 2025</strong></p>
+						</div>
+					</div>
+					<div class="timeline-item right">
+						<div class="content">
+							<p>😘 Nuestra primera cita juntos - <strong>19 Jun 2025</strong></p>
+						</div>
+					</div>
+					<div class="timeline-item left">
+					  <div class="content">
+    					<p>💍 Nuestro presente feliz - <strong id="fecha-presente"></strong></p>
+  					</div>
+					</div>
+				</div>
+			</section>
+
+			<div class="dedication">
+				<p class="dedication__text">Este video es dedicado para ti ❤️</p>
+				<iframe width="878" height="494" src="https://www.youtube.com/embed/nRhSPp5CWos?list=PLJm34JWAdgCrYv43aANverAhOO3fWHuVM" title="Ed Sheeran - Perfect (Sub Español)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			</div>
+
+			<div class="mensaje-container">
+				<h2>💌 Escríbeme algo bonito</h2>
+				<textarea id="mensaje" placeholder="Escribe tu mensaje con amor..."></textarea>
+				<button id="btnSend">💖 Enviar por WhatsApp</button>
+			</div>
+
+			<footer class="mensaje-footer">
+				© Todos los derechos reservados. 📖 <span class="libro">Libro de reclamaciones (solo para mi suegra)</span>
+			</footer>
+    </div>
+  </template>
+
+	<script src="./assets/js/main.js"></script>
+</body>
+</html>
