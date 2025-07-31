@@ -105,9 +105,10 @@ body.active {
 
 /* Styles Login */
 .login {
-  width: 450px;
-  height: 350px;
-  margin: 150px auto;
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  margin: 80px auto;
   border-radius: 20px;
   padding: 20px;
   display: flex;
@@ -125,8 +126,8 @@ body.active {
   justify-content: center;
   font-size: 2rem;
   gap: 0.5rem;
+  text-align: center;
 }
-
 
 .input__group {
   width: 100%;
@@ -136,13 +137,14 @@ body.active {
 }
 
 .login__input {
-  width: 400px;
+  width: 100%;
   padding: 10px;
   border: 1px solid var(--border-color);
   border-radius: 5px;
   font-size: 1rem;
   margin-top: 10px;
   outline: none;
+  box-sizing: border-box;
 }
 
 .login__input:focus {
@@ -152,7 +154,6 @@ body.active {
 
 .btn-alargado {
   width: 100%;
-  max-width: 300px;
   background: linear-gradient(135deg, var(--primary), #7873f5);
   color: #fff;
   font-size: 1.1rem;
@@ -173,6 +174,24 @@ body.active {
   transform: scale(1.04);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
   background: linear-gradient(135deg, var(--primary-dark), #9a96ff);
+}
+
+/* 📱 Responsive para móviles */
+@media (max-width: 480px) {
+  .login {
+    width: 350px;
+    margin: 150px auto;
+    padding: 15px;
+  }
+
+  .login__title {
+    font-size: 1.6rem;
+  }
+
+  .btn-alargado {
+    font-size: 1rem;
+    padding: 0.6rem 1.5rem;
+  }
 }
 
 /* Style Heartbeat */
@@ -295,13 +314,12 @@ body.active {
 /* Styles Galeria */
 .galeria {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 260px);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-rows: 200px;
   gap: 1rem;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 2rem 1rem;
-  justify-items: center;
 }
 
 .galeria img {
@@ -315,6 +333,13 @@ body.active {
 
 .galeria img:hover {
   transform: scale(1.03);
+}
+
+/* Opcional: mejora visual en pantallas pequeñas */
+@media (max-width: 600px) {
+  .galeria {
+    grid-auto-rows: 150px;
+  }
 }
 
 /* Styles Linea del tiempo */
@@ -430,7 +455,7 @@ body {
 
 .responsive-video {
   position: relative;
-  width: 100%;
+  width: 90%;
   padding-bottom: 56.25%; /* Relación 16:9 */
   height: 0;
   overflow: hidden;
