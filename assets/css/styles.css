@@ -181,8 +181,8 @@ body.active {
 /* Responsive móviles */
 @media (max-width: 481px) {
   .login {
-    width: 300px;
-    margin: 150px auto;
+    width: 350px;
+    margin: 200px auto;
     padding: 15px;
   }
 

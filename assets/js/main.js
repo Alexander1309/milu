@@ -39,10 +39,10 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelector(".login").style.display = "none";
 
   // TEST: 10 seg desde ahora (para pruebas)
-  const endDate = new Date(Date.now() + 10 * 1000);
+  //const endDate = new Date(Date.now() + 10 * 1000);
 
   // REAL:
-  //const endDate = new Date("2025-08-12T15:00:00");
+  const endDate = new Date("2025-08-12T15:00:00");
 
   const units = {
     days: document.querySelector("#unit-days"),
