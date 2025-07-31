@@ -176,10 +176,12 @@ body.active {
   background: linear-gradient(135deg, var(--primary-dark), #9a96ff);
 }
 
-/* 📱 Responsive para móviles */
-@media screen and (max-width: 768px) {
+/* Responsive tablets */
+
+/* Responsive móviles */
+@media (max-width: 481px) {
   .login {
-    width: 350px;
+    width: 300px;
     margin: 150px auto;
     padding: 15px;
   }
@@ -336,7 +338,7 @@ body.active {
 }
 
 /* Opcional: mejora visual en pantallas pequeñas */
-@media screen and (max-width: 768px) {
+ @media (max-width: 481px) {
   .galeria {
     grid-auto-rows: 150px;
   }
@@ -417,7 +419,8 @@ body {
 }
 
 /* Responsive */
-@media screen and (max-width: 768px) {
+@media (max-width: 481px) {
+
   .timeline::before {
     left: 12px;
   }
@@ -540,7 +543,7 @@ body {
   font-weight: bold;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 481px) {
   .mensaje-container {
     margin: 30px 15px;
     padding: 15px;
